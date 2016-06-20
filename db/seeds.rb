@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+g = Gym.create!(name: "Fitness forte", cnpj: "1234567891212", tel: "33311111")
+
+Employee.create!(name: "Brunao atleticano", password: "123456",
+password_confirmation: "123456", tel: "33327323", cpf: "12345678912",
+email: "admin@admin.com", gym: g)
