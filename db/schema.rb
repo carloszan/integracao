@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160620201423) do
+ActiveRecord::Schema.define(version: 20160621163030) do
+
+  create_table "books", force: :cascade do |t|
+    t.datetime "hour",        null: false
+    t.integer  "employee_id", null: false
+    t.integer  "student_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "books", ["employee_id"], name: "index_books_on_employee_id"
+  add_index "books", ["student_id"], name: "index_books_on_student_id"
 
   create_table "employees", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -44,5 +55,28 @@ ActiveRecord::Schema.define(version: 20160620201423) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "students", force: :cascade do |t|
+    t.string   "email",                  default: "",     null: false
+    t.string   "encrypted_password",     default: "",     null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,      null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.string   "name"
+    t.string   "tel",                    default: "null"
+    t.integer  "age"
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+    t.integer  "gym_id"
+  end
+
+  add_index "students", ["email"], name: "index_students_on_email", unique: true
+  add_index "students", ["gym_id"], name: "index_students_on_gym_id"
+  add_index "students", ["reset_password_token"], name: "index_students_on_reset_password_token", unique: true
 
 end

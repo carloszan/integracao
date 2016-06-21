@@ -1,4 +1,5 @@
 Funcionario - com autenticação
-academia
+academia - AUTENTICAR NÂO PODE TER DUAS ACADEMIAS COM O MESMO CNPJ
 #TODO
-agendar 
+aluno - name:string tel:string age:int DEVISE - já feito mas não mexi no model
+agendar - hour:datetime employee:reference student:reference - já feito mas não mexi no model
