@@ -1,0 +1,9 @@
+<%= simple_form_for @student do |f| %>
+  <%= f.input :name, placeholder: 'Digite o nome do usuario' %>
+  <%= f.input :email, placeholder: 'Digite o email do usuario' %>
+  <%= f.input :password, placeholder: 'Minimo 6 caracteres' %>
+  <%= f.input :password_confirmation, placeholder: 'Minimo 6 caracteres' %>
+  <%= f.input :tel, placeholder: '3333-3333' %>
+  <%= f.input :age %>
+  <%= f.button :submit %>
+<% end %>

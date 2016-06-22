@@ -6,4 +6,6 @@ class Employee < ActiveRecord::Base
 
   belongs_to :gym
   validates :name, :tel, :cpf, presence: true
+
+  has_one :book
 end

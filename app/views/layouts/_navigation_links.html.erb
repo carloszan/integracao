@@ -1,2 +1,13 @@
 <%# add navigation links to this file %>
+<li>
+  <a class="button" data-dropdown="autoCloseExample" aria-controls="autoCloseExample" aria-expanded="false">Cadastrar &raquo;</a>
+  <ul id="autoCloseExample" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+    <li><%= link_to 'Aluno', new_student_url %></li>
+    <li><a href="#">Ficha</a></li>
+    <li><a href="#">Ficha</a></li>
+    <li><a href="#">Ficha</a></li>
+    <li><a href="#">Ficha</a></li>
+    <li><a href="#">Ficha</a></li>
+  </ul>
+</li>
 <li><%= link_to 'About', page_path('about') %></li>

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :students
+
+  resources :students
+
+  #devise_for :students
   devise_for :employees
-  root to: 'visitors#index'
+  resources :books
+  root to: 'users#index'
 end
