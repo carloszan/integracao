@@ -1,5 +1,5 @@
-class StudentsController < ApplicationController
-
+class CreateStudentsController < ApplicationController
+  before_action :authenticate_employee!
   def new
     @student = Student.new
   end
