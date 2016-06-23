@@ -12,4 +12,7 @@
   </ul>
 </li>
 <li> <%= link_to 'Horarios', books_path %> </li>
+<% if student_signed_in? %>
+  <li> <a href="#">Avaliacao</a> </li>
+<% end %>
 <li><%= link_to 'About', page_path('about') %></li>
