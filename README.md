@@ -15,7 +15,9 @@ Getting Started
 ---------------
 
 Application for Software Engineering 1, final coursework.
+
 Teacher: Lucas
+
 Federal University of Viçosa
 
 
