@@ -1,4 +1,4 @@
-<%= simple_form_for @book do |f| %>
+<%= simple_form_for @book, url: employee_books_path do |f| %>
   <%= f.input :hour, placeholder: 'Digite o horario' %>
   <%= f.button :submit %>
 <% end %>

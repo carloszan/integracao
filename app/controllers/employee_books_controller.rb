@@ -1,4 +1,4 @@
-class BooksController < ApplicationController
+class EmployeeBooksController < ApplicationController
   before_action :authenticate_employee!
   def index
     @books = Book.all
