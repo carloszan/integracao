@@ -22,9 +22,9 @@ Federal University of Viçosa
 Credits
 -------
 
-Bruno Conceição do Nascimento
-Carlos Henrique Lopes Zansavio
-Elcio Pereira de Souza Junior
+- Bruno Conceição do Nascimento
+- Carlos Henrique Lopes Zansavio
+- Elcio Pereira de Souza Junior
 
 License
 -------
