@@ -30,6 +30,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
 group :production do
   gem 'pg'

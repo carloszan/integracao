@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Employee, type: :model do
   describe "validations" do
+    it { should validate_presence_of :name }
     it "has valid atributtes" do
       e = create(:employee)
       expect(e).to be_valid
