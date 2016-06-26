@@ -18,3 +18,5 @@
 $(function() {
   $(document).foundation();
 });
+
+//$('.logo').attr({ src: "<%= asset_path('logo01.png') %>" });

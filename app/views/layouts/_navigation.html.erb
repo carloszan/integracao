@@ -9,11 +9,11 @@
       <%= render 'layouts/navigation_links' %>
     </ul>
     <% if employee_signed_in? %>
-      <li class="name"><%= link_to 'Deslogar', destroy_employee_session_path, method: :delete %></li>
+      <li class="name"><%= link_to 'Sair', destroy_employee_session_path, method: :delete %></li>
     <% end %>
 
     <% if student_signed_in? %>
-      <li class="name"><%= link_to 'Deslogar', destroy_employee_session_path, method: :delete %></li>
+      <li class="name"><%= link_to 'Sair', destroy_employee_session_path, method: :delete %></li>
     <% end %>
   </div>
 </nav>

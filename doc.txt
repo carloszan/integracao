@@ -3,3 +3,7 @@ academia - AUTENTICAR NÂO PODE TER DUAS ACADEMIAS COM O MESMO CNPJ
 #TODO
 aluno - name:string tel:string age:int DEVISE - já feito mas não mexi no model
 agendar - hour:datetime employee:reference student:reference - já feito mas não mexi no model
+
+Cores 
+claro faec81
+forte f7e22f

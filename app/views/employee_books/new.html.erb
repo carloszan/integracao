@@ -1,4 +1,7 @@
 <%= simple_form_for @book, url: employee_books_path do |f| %>
-  <%= f.input :hour, placeholder: 'Digite o horario' %>
-  <%= f.button :submit %>
+<div class="large-5 large-centered columns">
+  <%= "Digite o horário desejado" %>
+  <%= f.input :hour, placeholder: 'Digite'%>
+  <%= f.button :submit, class: "button expand" %>
+</div>
 <% end %>

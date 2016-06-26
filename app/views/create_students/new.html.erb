@@ -1,9 +1,12 @@
+<br>
 <%= simple_form_for @student, url: create_students_path do |f| %>
-  <%= f.input :name, placeholder: 'Digite o nome do usuario' %>
-  <%= f.input :email, placeholder: 'Digite o email do usuario' %>
-  <%= f.input :password, placeholder: 'Minimo 6 caracteres' %>
-  <%= f.input :password_confirmation, placeholder: 'Minimo 6 caracteres' %>
-  <%= f.input :tel, placeholder: '3333-3333' %>
-  <%= f.input :age %>
-  <%= f.button :submit %>
+<div class="large-5 large-centered columns">
+  <%= f.input :name, placeholder: 'Digite o nome do usuario', label: false %>
+  <%= f.input :email, placeholder: 'Digite o email do usuario', label: false %>
+  <%= f.input :password, placeholder: 'Senha', label: false %>
+  <%= f.input :password_confirmation, placeholder: 'Confirmar senha', label: false %>
+  <%= f.input :tel, placeholder: 'Telefone', label: false %>
+  <%= f.input :age, placeholder: "Idade", label: false %>
+  <%= f.button :submit, "Criar estudante", class: "button expand"%>
 <% end %>
+</div>

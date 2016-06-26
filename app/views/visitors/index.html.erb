@@ -1,1 +1,5 @@
-<h3>Welcome</h3>
+<h3>Bem vindo</h3>
+<% if employee_signed_in? %>
+    <%= link_to "Logar funcionario",  new_employee_session_path %>
+<% end %>
+<%= image_tag "companheiro.jpg" %>-->

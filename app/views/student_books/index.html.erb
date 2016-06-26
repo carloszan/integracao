@@ -1,6 +1,6 @@
 <div class="row">
   <% @books.each do |book| %>
-    <%= book.hour.to_formatted_s(:short) %> <%= book.employee.name %> <br>
-    <%= link_to "Agendar", edit_student_book_path(book) %>
+     <%= "Instrutor:" %> <%= book.employee.name %> <br>  <%= book.hour.to_formatted_s(:short) %>
+    <%= link_to 'Agendar', edit_student_book_path(book), class: "button tiny info" %> <br>
   <% end %>
 </div>
