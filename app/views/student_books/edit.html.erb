@@ -1,6 +1,10 @@
-<%= @book.formated_hour %> <%= @book.employee.name %> <br>
+<br>
+<div class="large-3 large-centered columns">
+  <%= @book.formated_hour %> <%= @book.employee.name %> <br>
+  
+  <%= simple_form_for @book, url: student_book_path do |f| %>
+    <%= f.hidden_field :hour, placeholder: 'Digite o horario' %>
+    <%= f.button :submit, "Agendar" %>
+  <% end %>
 
-<%= simple_form_for @book, url: student_book_path do |f| %>
-  <%= f.hidden_field :hour, placeholder: 'Digite o horario' %>
-  <%= f.button :submit %>
-<% end %>
+</div>

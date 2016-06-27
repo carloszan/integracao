@@ -59,3 +59,25 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #f7e22f;
 }
+
+table thead {
+    background: #43886c;
+}
+
+table {
+    background: #f0e22f;
+    border: solid 1px #000000;
+    margin-bottom: 1.25rem;
+    table-layout: auto;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #e4d627;
+}
+
+table thead tr th, table thead tr td {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0.5rem 0.625rem 0.625rem;
+}

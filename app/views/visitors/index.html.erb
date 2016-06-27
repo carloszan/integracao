@@ -1,7 +1,4 @@
 <div class="large-10 large-centered columns">
-    <h3>Bem vindo</h3>
-    <% if employee_signed_in? %>
-        <%= link_to "Logar funcionario",  new_employee_session_path %>
-    <% end %>
+    <h3>Bem vindo<%= employee_signed_in? ? + ', ' + current_employee.name : '' %></h3>
     <%= image_tag "companheiro.png" %>
 </div>

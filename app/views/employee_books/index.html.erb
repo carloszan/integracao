@@ -1,21 +1,25 @@
 <div class="large-3 large-centered columns">
   <div class="large-5 medium-12 small-5 large-centered columns"><p><h5>Horários</h5></p></div>
   <table>
-    <tr>
-      <td>Horário</td>
-      <td>Instrutor</td>
-      <td>Aluno</td>
-    </tr>
-    <% @books.each do |book| %>
+    <thead>
       <tr>
-      <td> <%= book.hour.to_formatted_s(:short) %> </td> 
-      <td> <%= book.employee.name %> </td> 
-      <% if book.student %>
-        <td><%= book.student.name %></td>
-      <% else %>
-        <td><%= "-" %></td>
-      <% end %>
+        <td>Horário</td>
+        <td>Instrutor</td>
+        <td>Aluno</td>
       </tr>
-    <% end %>
+    </thead>
+    <tbody>
+    <% @books.each do |book| %>
+        <tr>
+          <td> <%= book.hour.to_formatted_s(:short) %> </td> 
+          <td> <%= book.employee.name %> </td> 
+          <% if book.student %>
+            <td><%= book.student.name %></td>
+          <% else %>
+            <td><%= "-" %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
   </table
 </div>

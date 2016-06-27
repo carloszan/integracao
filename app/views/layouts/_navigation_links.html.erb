@@ -24,4 +24,8 @@
   <li> <%= link_to 'Horarios', employee_books_path %> </li>
 <% end %>
 
-<li><%= link_to 'About', about_path %></li>
+<% unless employee_signed_in? || student_signed_in? %>
+  <li><%= link_to "Logar",  new_employee_session_path %></li>
+<% end %>
+
+<li><%= link_to 'Sobre', about_path %></li>
