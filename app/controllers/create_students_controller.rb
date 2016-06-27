@@ -16,12 +16,6 @@ class CreateStudentsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def delete
-  end
-
   private
 
   def students_params

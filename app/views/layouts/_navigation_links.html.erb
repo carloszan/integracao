@@ -1,22 +1,31 @@
 <%# add navigation links to this file %>
+
 <% if employee_signed_in? %>
+  <!-- Alteração -->
   <li>
-    <a class="button" data-dropdown="autoCloseExample" aria-controls="autoCloseExample" aria-expanded="false">Cadastrar &raquo;</a>
-    <ul id="autoCloseExample" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
-      <li><%= link_to 'Aluno', new_create_student_url %></li>
-      <li><%= link_to 'Horario', new_employee_book_url %></li>
+    <a href="#" data-dropdown="drop" >Cadastrar</a>
+    <ul id="drop" class="f-dropdown" data-dropdown-content>
+      <li><a href="#"><%= link_to 'Aluno', new_create_student_url %></a></li>
+      <li><a href="#"><%= link_to 'Horario', new_employee_book_url %></li>
       <li><a href="#">Ficha</a></li>
       <li><a href="#">Avaliacao</a></li>
       <li><a href="#">Teste Carga</a></li>
-      <li><a href="#">H. Avaliação</a></li>
+      <li><a href="#">Horário Avaliação</a></li>
       <li><a href="#">Treino</a></li>
     </ul>
   </li>
+  <!-- Fim Alteração -->
 <% end %>
+
 <% if student_signed_in? %>
   <li> <%= link_to 'Horarios', student_books_path %> </li>
   <li> <a href="#">Avaliacao</a> </li>
 <% elsif employee_signed_in? %>
   <li> <%= link_to 'Horarios', employee_books_path %> </li>
 <% end %>
-<li><%= link_to 'About', about_path %></li>
+
+<% unless employee_signed_in? || student_signed_in? %>
+  <li><%= link_to "Logar",  new_employee_session_path %></li>
+<% end %>
+
+<li><%= link_to 'Sobre', about_path %></li>

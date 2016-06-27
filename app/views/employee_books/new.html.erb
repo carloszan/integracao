@@ -1,4 +1,8 @@
+<% content_for :title do %>Agendar horário<% end %>
 <%= simple_form_for @book, url: employee_books_path do |f| %>
-  <%= f.input :hour, placeholder: 'Digite o horario' %>
-  <%= f.button :submit %>
+<div class="large-5 large-centered columns">
+  <h4><br>Digite o horário desejado:</h4>
+  <%= f.input :hour, placeholder: 'Digite', label: false%>
+  <%= f.button :submit, "Criar horário", class: "button expand" %>
+</div>
 <% end %>

@@ -1,1 +1,4 @@
-<h3>Welcome</h3>
+<div class="large-10 large-centered columns">
+    <h3>Bem vindo<%= employee_signed_in? ? + ', ' + current_employee.name : '' %></h3>
+    <%= image_tag "companheiro.png" %>
+</div>

@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Book, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+  describe "presence" do
+    it { validate_presence_of :hour }
+    it { validate_presence_of :employee }
+  end
 end

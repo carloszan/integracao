@@ -8,6 +8,6 @@ class Book < ActiveRecord::Base
   end
 
   def self.not_booked
-    self.where.not(student_id: nil)
+    self.where(student_id: nil)
   end
 end
