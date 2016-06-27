@@ -23,4 +23,5 @@ class EmployeeBooksController < ApplicationController
   def books_params
     params.require(:book).permit(:hour)
   end
+
 end
