@@ -15,7 +15,7 @@ class Book < ActiveRecord::Base
   private
   def check_date
     if (self.hour < Time.now)
-      errors.add(:alert, "Registre apenas dias no futuro")
+      errors.add(:alert, "Registre apenas horários no futuro")
     end
   end
 end
