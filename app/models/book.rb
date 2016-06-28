@@ -5,7 +5,7 @@ class Book < ActiveRecord::Base
   belongs_to :student
 
   def formated_hour
-    self.hour.to_formatted_s(:long)
+    self.hour.to_formatted_s(:db)
   end
 
   def self.not_booked
