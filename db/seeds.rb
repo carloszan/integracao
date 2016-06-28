@@ -2,4 +2,4 @@ g = Gym.create!(name: "Fabrica de Presidentes 13", cnpj: "1234567891212", tel: "
 
 Employee.create!(name: "Luiz Inacio", password: "123456",
 password_confirmation: "123456", tel: "33327323", cpf: "12345678912",
-email: "admin@admin.com", gym: g)
+email: "lula@fitness.com", gym: g)
