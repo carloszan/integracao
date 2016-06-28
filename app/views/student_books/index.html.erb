@@ -1,7 +1,7 @@
 <div class="large-3 large-centered columns">
   <% @books.each do |book| %>
     <% if book.hour > Time.now %>
-     <%= "Instrutor:" %> <%= book.employee.name %> <br>  <%= book.hour.to_formatted_s(:short) %>
+     <%= "Instrutor:" %> <%= book.employee.name %> <br>  <%= book.formated_hour %>
      <%= link_to 'Agendar', edit_student_book_path(book), class: "button" %> <br>
     <% end %>
   <% end %>
