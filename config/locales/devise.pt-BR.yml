@@ -1,6 +1,10 @@
 # encoding: UTF-8
 # pt-BR translations for Devise
 pt-BR:
+  activerecord:
+    attributes:
+      employee:
+        remember_me: "Lembrar senha"
   devise:
     confirmations:
       confirmed: 'Sua conta foi confirmada com sucesso. Você está logado.'
