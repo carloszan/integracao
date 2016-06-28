@@ -13,10 +13,9 @@ class Book < ActiveRecord::Base
   end
 
   private
-  #VERIFICAR PQ NÃO TÁ APARECENDO UM ERRO LÁ NA VIEW
   def check_date
     if (self.hour < Time.now)
-      self.errors.add(:notice, "registre apenas dias para frente")
+      errors.add(:alert, "Registre apenas dias no futuro")
     end
   end
 end

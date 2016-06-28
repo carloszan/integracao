@@ -1,3 +1,9 @@
+<% @book.errors.each do |name, error| %>
+  <div data-alert class="alert-box round <%= name.to_s == 'notice' ? 'success' : 'alert' %>">
+    <%= error %>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>
 <% content_for :title do %>Agendar horário<% end %>
 <%= simple_form_for @book, url: employee_books_path do |f| %>
 <div class="large-5 large-centered columns">
